@@ -22,21 +22,21 @@ android {
 
     defaultConfig {
         applicationId 'com.example.saschpe.customtabs'
-        minSdkVersion 17
+        minSdkVersion 18
         targetSdkVersion 27
         versionCode 170112
         versionName '1.1.2'
         archivesBaseName = "${applicationId}-${versionName}"
-        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
         vectorDrawables.useSupportLibrary = true
     }
 }
 
 dependencies {
     implementation project(':customtabs')
-    implementation "com.android.support:animated-vector-drawable:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
-    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
-    implementation "com.android.support:customtabs:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
+    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
+    implementation 'androidx.browser:browser:1.0.0-beta01'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha1'
+    implementation 'androidx.vectordrawable:vectordrawable-animated:1.0.0-beta01'
+    implementation 'com.google.android.material:material:1.0.0-beta01'
 }

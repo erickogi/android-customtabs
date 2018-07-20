@@ -31,12 +31,12 @@ if (localPropertiesFile.file) {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     buildToolsVersion '27.0.3'
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionName '1.1.2'
     }
 
@@ -53,8 +53,8 @@ android {
 }
 
 dependencies {
-    api "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
-    api "com.android.support:customtabs:$rootProject.supportLibraryVersion"
+    api 'androidx.appcompat:appcompat:1.0.0-beta01'
+    api 'androidx.browser:browser:1.0.0-beta01'
 
     testImplementation 'junit:junit:4.12'
     testImplementation "org.robolectric:robolectric:$rootProject.robolectricVersion"
